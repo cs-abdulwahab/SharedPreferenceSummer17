@@ -2,6 +2,7 @@ package com.example.abdul_wahab.sharedpreferencesummer17;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         etInput = (EditText) findViewById(R.id.etInput);
         btnSave = (Button) findViewById(R.id.btnSave);
+
+
 
         //Singleton Design Pattern
         final SharedPreferences sp = getSharedPreferences("mysettings", MODE_PRIVATE);
